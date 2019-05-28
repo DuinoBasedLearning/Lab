@@ -11,7 +11,7 @@ K0=0.82;
 tau0=0.26;
 planta=tf([K0],[tau0,1])
 
-% Discrete time models
+% Discrete time model
 Ts=0.01;
 plantad=c2d(planta,Ts,'zoh');
 
@@ -20,4 +20,9 @@ figure(1)
 nyquist(plantad,'g')
 hold on
 plot(X,Y, 'r*' )
-legend('Diagrama de Nyquist teórico (Ts=0.01)','Diagrama de Nyquist experimental (Ts=0.01)')
+title('Nyquist Diagram','fontsize');
+xlabel('Real axis','fontsize');
+ylabel('Imaginary axis');
+legend('Theoretical Nyquist diagram (Ts=0.01)','Experimental Nyquist diagram (Ts=0.01)')
+%legend('Diagrama de Nyquist teórico (Ts=0.01)','Diagrama de Nyquist experimental (Ts=0.01)')
+

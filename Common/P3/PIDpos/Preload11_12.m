@@ -27,6 +27,7 @@ s2=-xi*wn-j*wd
 % Poles of the second order discrete system that will fulfill the specifications
 p1=exp(Ts* s1 )
 p2=exp(Ts* s2 )
+
 % Fix third pole
 p3=0.01
 
@@ -54,6 +55,7 @@ p4=x(1)
 Kp=x(2)
 Ki=(2/Ts)*x(3)
 Kd=Ts*x(4)
+% Anti-wind-up
 pawd=0.2;
 Kaw=1/Ki;
 
