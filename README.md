@@ -1,3 +1,4 @@
+# Duino-Based Learning (DBL)
 We believe experimentation is key in learning. Project-Based Learning is hard to implement from scratch and hence we aim to provide a starting point for any educator or learner. DBL is a project to develop freely redistributable materials to conduct educational lab projects with MATLAB, Simulink, Arduino and low-cost plants.
 
 The lab introduces the fundamentals of Control Engineering through simulation and rapid controller prototyping with the free Arduino support packages for MATLAB and Simulink: <https://mathworks.com/arduino>. 
